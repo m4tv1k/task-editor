@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>tasklist</title>
+</head>
+<body>
+    <section class="container">
+        <div class="tasks">
+            <div class="newTask">
+                <div class="task-name__container padding">
+                    <h1>Task name</h1>
+                    <input type="text" placeholder="Enter task name (рабочий скрипт, форма из html файла)" class="task-name_input" id="task-name">
+                </div>
+
+                <div class="subtasks__container padding">
+                    <div class="subtasks__container-nametag">
+                        <h1>Subtasks</h1>
+                        <button id="add-sub" onclick="addSub()">+</button>
+                    </div>
+                    <div class="subtasks__container__forms">
+                        <div class="forms-names">
+                            <div id="tag-description"><span>Description</span></div>
+                            <div id="tag-time"><span>Time</span></div>
+                            <div id="tag-button"><span >Button</span></div>
+                        </div>
+                        <div class="subtasks__form ">
+                            
+                            <div class="subtasks__form-elem">
+                                <input type="text" id="sub-name" placeholder="Enter subtask name (рабочий скрипт, форма из html файла)">
+                                <input type="number" id="time" placeholder="0">
+                                <button id="delete-sub" onclick="removeRow(this)">×</button>
+                            </div>
+
+                        </div>
+                        <div class="task-btns padding">
+                            <button id="save">Save task in localstorage</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <button id="create-new" onclick="newTask()">Create new task</button>
+
+        <div class="task-list__container padding">
+            <div class="task-list__container-nametag">
+                <h1>Task List</h1>
+            </div>
+            <div class="task-list__container__output">
+                <!-- <div class="task-list__elem padding">
+                    <div class="task-list__elem-block">
+                        <div class="task-list__logo"></div>
+                        <div class="task-list__elem-col">
+                            <h3>Task name</h3>
+                            <ul>
+                                <li>New task - 0h</li>
+                                <li>New task - 0h</li>
+                                
+
+                            </ul>
+                        </div>   
+                    </div>
+                    <div class="task-list__button">
+                        <button onclick="deleteTask(${index})" id="delete-list-elem">×</button>
+                        <button id="load">LOAD</button>   
+                    </div>       
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <script src='script.js'></script>
+
+</body>
+</html>
+
+
+
+<!-- <div class="subtasks__form-elem">
+    <input type="text" id="sub-name" placeholder="Enter subtask name">
+    <input type="number" id="time" placeholder="0">
+    <button id="delete-sub" onclick="removeRow(this)">×</button>
+</div> -->
