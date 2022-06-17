@@ -1,0 +1,242 @@
+*,h1,h2,h3,h4,h5,h6,p,ul,a{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+    /* height: 100%; */
+	overflow-x: hidden;
+    font-family: "CoreSans";
+}
+body{
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.padding{
+    padding-top: 20px;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-family: "ComfortaaRegular";
+    font-size: 30px;
+}
+
+input:not(button){
+    padding: 10px;
+    border: 2px solid #000;
+}
+
+.task-name_input{
+    width: 670px;
+}
+
+.subtasks__container-nametag{
+    display: flex;
+}
+
+#add-sub{
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 100px;
+    width: 60px;
+    height: 35px;
+    border: none;
+    margin-left: 20px;
+}
+
+#add-sub:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000;
+    transition: all linear .1s;
+}
+
+.forms-names{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#tag-description{
+    width: 73%;
+    padding: 0px 10px;
+}
+
+#tag-time{
+    width: 35px;
+    padding: 0px 10px;
+}
+
+#tag-button{
+    width: 60px;
+    
+}
+
+.subtasks__container__forms{
+    display: flex;
+    flex-direction: column;
+}
+
+.subtasks__form{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: space-between; */
+}
+.subtasks__form-elem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+#delete-sub{
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 100px;
+    width: 60px;
+    height: 35px;
+    border: 2px solid #000;
+}
+
+#delete-sub:hover{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    transition: all linear .1s;
+    cursor: pointer;
+}
+
+#sub-name{
+    width: 73%;
+}
+
+#time{
+    width: 35px;
+}
+
+.task-btns{
+    display: flex;flex-direction: column;
+}
+
+#save{
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    height: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    
+}
+#save:hover{
+    background-color: #000;
+    color: #fff;
+    transition: all linear .1s;
+    cursor: pointer;
+}
+#create-new{
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    height: 40px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    width: 100%;
+}
+#create-new:hover{
+    background-color: #fff;
+    color: #000;
+    transition: all linear .1s;
+    cursor: pointer;
+}
+.task-list__elem{
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+.task-list__elem-block{
+    display: flex;
+}
+.task-list__elem-col{
+    margin-left: 10px;
+}
+.task-list__elem-col ul{
+    margin-left: 20px;
+}
+.task-list__logo{
+    background-color: #000;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+#load{
+    background-color: #fff;
+    border: 2px solid #000;
+    text-transform: uppercase;
+    color: #000;
+    min-width: 100px;
+    max-height: 30px;
+    border-radius: 4px;
+    padding: 5px;
+    font-weight: 600;
+}
+#load:hover{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    transition: all linear .1s;
+}
+.task-list__button{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#delete-list-elem{
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 100px;
+    width: 60px;
+    height: 35px;
+    margin-bottom: 10px;
+    border: 2px solid #000;
+}
+
+#delete-list-elem:hover{
+    background-color: #000;
+    color: #fff;
+    border: none;
+    transition: all linear .1s;
+    cursor: pointer;
+}
+
+@font-face{
+    src: url(fonts/ComfortaaRegular.ttf);
+    font-family: "ComfortaaRegular";
+}
+
+@font-face {
+    font-family: "CoreSans";
+    src: url(fonts/CoreSans.ttf);
+}
